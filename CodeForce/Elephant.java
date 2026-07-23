@@ -1,4 +1,4 @@
-
+package CodeForce;
 import java.util.Scanner;
 
 public class Elephant{
