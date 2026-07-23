@@ -6,10 +6,13 @@
         <h1>Online Voting System</h1>
         <form action="#">
             <h3>Login</h3>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br><br>
-            <input type="submit" value="Login">
+            <input type="number" name="mobile" placeholder="Enter mobile"><br><br>
+            <input type="password" name="password" placeholder="Enter password"><br><br>
+            <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select><br><br>
+            <button>Login</button><br><br>
+            New User? <a href="#">Register here</a>
         </form>
 </html>
