@@ -2,6 +2,7 @@ body{
     margin:0;
     padding:0;
     font-family:'Poppins',sans-serif;
+    color:white;
 
     display:flex;
     flex-direction:column;
@@ -66,6 +67,7 @@ z-index:-1;
 width:420px;
 
 padding:40px;
+color:white;
 
 background:rgba(255,255,255,.12);
 
@@ -76,7 +78,7 @@ border-radius:20px;
 border:1px solid rgba(255,255,255,.2);
 
 box-shadow:
-0 25px 60px rgba(0,0,0,.5);
+0 25px 60px rgba(246, 10, 10, 0.5);
 
 transition:.4s;
 
@@ -116,7 +118,7 @@ border:none;
 
 border-radius:10px;
 
-background:rgba(255,255,255,.18);
+background:rgba(245, 245, 245, 0.18);
 
 color:white;
 
