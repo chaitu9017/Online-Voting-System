@@ -214,3 +214,16 @@ body {
     display:block;
     margin:10px auto;
 }
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    padding: 30px 20px;
+
+    background: #e8f5e9;
+
+    color: #000000;
+
+    border-right: 1px solid #c8e6c9;
+
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.12);
+}
