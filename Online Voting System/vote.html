@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cast Vote | Online Voting System</title>
+
+    <link rel="stylesheet" href="css/vote.css">
+</head>
+
+<body>
+
+    <div class="vote-page">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <img src="cb_photo.jpg" class="profile" alt="Profile">
+
+            <h2>Chaitanya Bagade</h2>
+
+            <p>Voter ID : IN24578963</p>
+
+            <hr>
+
+            <a href="dashboard.html">🏠 Dashboard</a>
+
+            <a href="vote.html" class="active">🗳️ Vote</a>
+
+            <a href="result.html">📊 Result</a>
+
+            <a href="index.html">🚪 Logout</a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="content">
+
+            <div class="page-header">
+
+                <h1>Cast Your Vote 🗳️</h1>
+
+                <p>
+                    Select one candidate and click the
+                    <strong>Vote Now</strong> button.
+                </p>
+
+            </div>
+
+
+            <!-- Election Information -->
+
+            <div class="election-info">
+
+                <div>
+                    <span>Election</span>
+                    <strong>Student General Election 2026</strong>
+                </div>
+
+                <div>
+                    <span>Status</span>
+                    <strong class="live">● LIVE</strong>
+                </div>
+
+                <div>
+                    <span>Voting Deadline</span>
+                    <strong>10 August 2026</strong>
+                </div>
+
+            </div>
+
+
+            <h2 class="section-title">
+                Choose Your Candidate
+            </h2>
+
+
+            <!-- Candidates -->
+
+            <div class="candidate-container">
+
+
+                <!-- Candidate 1 -->
+
+                <div class="candidate-card">
+
+                    <img
+                        src="images/abhijeet.jpg"
+                        alt="Abhijeet Patil"
+                    >
+
+                    <h2>Abhijeet Patil</h2>
+
+                    <p class="party">
+                        Shiv Sena A
+                    </p>
+
+                    <p class="symbol">
+                        🏹
+                    </p>
+
+                    <button
+                        onclick="castVote('Abhijeet Patil')"
+                    >
+                        Vote Now
+                    </button>
+
+                </div>
+
+
+                <!-- Candidate 2 -->
+
+                <div class="candidate-card">
+
+                    <img
+                        src="images/prithviraj.jpg"
+                        alt="Prithviraj Chavan"
+                    >
+
+                    <h2>Prithviraj Chavan</h2>
+
+                    <p class="party">
+                        BJP
+                    </p>
+
+                    <p class="symbol">
+                        🪷
+                    </p>
+
+                    <button
+                        onclick="castVote('Prithviraj Chavan')"
+                    >
+                        Vote Now
+                    </button>
+
+                </div>
+
+
+                <!-- Candidate 3 -->
+
+                <div class="candidate-card">
+
+                    <img
+                        src="images/prathmesh.jpg"
+                        alt="Prathmesh Jadhav"
+                    >
+
+                    <h2>Prathmesh Jadhav</h2>
+
+                    <p class="party">
+                        Rashtravadi Congress
+                    </p>
+
+                    <p class="symbol">
+                        🕰️
+                    </p>
+
+                    <button
+                        onclick="castVote('Prathmesh Jadhav')"
+                    >
+                        Vote Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Warning -->
+
+            <div class="warning">
+
+                ⚠️ <strong>Important:</strong>
+
+                You can vote only once.
+                Please verify your candidate before submitting.
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Vote Confirmation -->
+
+    <script>
+
+        function castVote(candidate) {
+
+            let confirmVote =
+                confirm(
+                    "Are you sure you want to vote for " +
+                    candidate +
+                    "?"
+                );
+
+            if (confirmVote) {
+
+                alert(
+                    "Your vote for " +
+                    candidate +
+                    " has been recorded successfully!"
+                );
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
