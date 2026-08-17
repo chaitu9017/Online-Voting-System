@@ -18,7 +18,183 @@ body {
     display: flex;
     min-height: 100vh;
 }
+/* Page entrance */
+.main-content {
+    animation: pageEnter 0.8s ease-out;
+}
 
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Statistics cards */
+.stat-card {
+    opacity: 0;
+    animation: cardEnter 0.7s ease forwards;
+}
+
+.stat-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stat-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.stat-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.stat-card:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+@keyframes cardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.stat-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px) scale(1.02);
+
+    box-shadow:
+        0 15px 35px rgba(46, 125, 50, 0.20);
+}
+
+.bar {
+    width: 55px;
+    min-height: 20px;
+
+    background: linear-gradient(
+        180deg,
+        #66bb6a,
+        #2e7d32
+    );
+
+    border-radius: 8px 8px 0 0;
+
+    position: relative;
+
+    transform-origin: bottom;
+
+    transform: scaleY(0);
+
+    animation: barGrow 1.2s cubic-bezier(.2,.8,.2,1) forwards;
+}
+
+
+/* Individual bar delays */
+
+.bar-item:nth-child(1) .bar {
+    animation-delay: 0.3s;
+}
+
+.bar-item:nth-child(2) .bar {
+    animation-delay: 0.45s;
+}
+
+.bar-item:nth-child(3) .bar {
+    animation-delay: 0.6s;
+}
+
+.bar-item:nth-child(4) .bar {
+    animation-delay: 0.75s;
+}
+
+.bar-item:nth-child(5) .bar {
+    animation-delay: 0.9s;
+}
+
+.bar-item:nth-child(6) .bar {
+    animation-delay: 1.05s;
+}
+
+
+@keyframes barGrow {
+
+    0% {
+        transform: scaleY(0);
+    }
+
+    70% {
+        transform: scaleY(1.08);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+}
+
+.bar span {
+    animation: numberAppear 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
+@keyframes numberAppear {
+
+    from {
+        opacity: 0;
+        transform: translate(-50%, 10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+}
+.graph-section {
+    animation: graphEnter 0.9s ease-out;
+}
+
+@keyframes graphEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.stat-icon {
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+}
 
 /* Sidebar */
 
