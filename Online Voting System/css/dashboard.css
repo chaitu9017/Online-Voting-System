@@ -768,4 +768,241 @@ body {
     background: rgba(220,38,38,0.85);
 
 }
+/* ==============================
+   WHAT'S NEW
+================================ */
 
+.announcement {
+    width: 100%;
+    margin-bottom: 28px;
+
+    background: orange;
+    color: ;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    animation: announcementAppear 0.7s ease;
+}
+
+.announcement-title {
+    text-align: center;
+
+    padding: 10px;
+
+    background: yellow;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.announcement-wrapper {
+    width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    padding: 13px 0;
+
+    background: ;
+}
+
+.announcement-text {
+    display: inline-block;
+
+    padding-left: 100%;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    animation: runningText 18s linear infinite;
+}
+
+@keyframes runningText {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+@keyframes announcementAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ==============================
+   VOTER STATISTICS
+================================ */
+
+.voter-statistics {
+    width: 100%;
+}
+
+.voter-statistics h2 {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    color: #111;
+}
+
+
+/* Statistics row */
+
+.stats-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Individual cards */
+
+.stat-card {
+    background: white;
+
+    min-height: 95px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    opacity: 0;
+
+    animation:
+        statCardAppear
+        0.7s
+        ease
+        forwards;
+}
+
+.stat-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stat-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.stat-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.stat-card:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+
+.stat-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(46, 125, 50, 0.20);
+}
+
+
+/* Icon */
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 12px;
+
+    background: #e8f5e9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+/* Text */
+
+.stat-card p {
+    margin: 0 0 5px;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+.stat-card strong {
+    font-size: 25px;
+
+    color: #111;
+
+    display: inline-block;
+}
+
+
+/* Card animation */
+
+@keyframes statCardAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .stats-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+}
