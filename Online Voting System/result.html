@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Election Result | Online Voting System</title>
+
+    <link rel="stylesheet" href="css/result.css">
+</head>
+
+<body>
+
+<div class="page-container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="profile-section">
+
+            <img src="cb_photo.jpg"
+                 class="profile"
+                 alt="Profile">
+
+            <h2>Chaitanya Bagade</h2>
+
+            <p>Voter ID : IN24578963</p>
+
+        </div>
+
+        <hr>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html">
+                🏠 <span>Dashboard</span>
+            </a>
+
+            <a href="vote.html">
+                🗳️ <span>Vote</span>
+            </a>
+
+            <a href="result.html" class="active">
+                📊 <span>Result</span>
+            </a>
+
+            <a href="index.html">
+                🚪 <span>Logout</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <div class="result-header">
+
+            <div>
+                <h1>Election Results 📊</h1>
+                <p>Live voting results for Election 2026</p>
+            </div>
+
+            <div class="status">
+                🟢 Live
+            </div>
+
+        </div>
+
+
+        <!-- Running Announcement -->
+
+        <div class="announcement">
+
+            <div class="announcement-title">
+                What's New
+            </div>
+
+            <div class="announcement-wrapper">
+
+                <div class="announcement-text">
+
+                    📢 Election 2026 results are being updated live!
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+                    Thank you for participating in the election.
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+                    Final results will be announced soon.
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= RESULT SUMMARY ================= -->
+
+        <div class="summary-container">
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    👥
+                </div>
+
+                <div>
+                    <p>Total Voters</p>
+                    <h2 class="counter" data-target="1250">0</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    🗳️
+                </div>
+
+                <div>
+                    <p>Total Votes</p>
+                    <h2 class="counter" data-target="875">0</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    📈
+                </div>
+
+                <div>
+                    <p>Turnout</p>
+                    <h2 class="counter" data-target="70">0%</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= WINNER ================= -->
+
+        <section class="winner-section">
+
+            <h2>Leading Candidate 🏆</h2>
+
+            <div class="winner-card">
+
+                <div class="winner-badge">
+                    🏆
+                </div>
+
+                <img src="images/candidate1.jpg"
+                     class="winner-photo"
+                     alt="Candidate">
+
+                <div class="winner-info">
+
+                    <h2>Abhijeet Patil</h2>
+
+                    <p>Shiv Sena A</p>
+
+                    <div class="winner-votes">
+                        <strong>325</strong>
+                        <span>Votes</span>
+                    </div>
+
+                </div>
+
+                <div class="winner-label">
+                    Leading
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CANDIDATE RESULTS ================= -->
+
+        <section class="results-section">
+
+            <div class="section-heading">
+
+                <h2>Candidate Results</h2>
+
+                <span>Election 2026</span>
+
+            </div>
+
+
+            <!-- Candidate 1 -->
+
+            <div class="result-card">
+
+                <div class="rank">
+                    1
+                </div>
+
+                <img src="images/candidate1.jpg"
+                     class="candidate-photo"
+                     alt="Candidate">
+
+                <div class="candidate-info">
+
+                    <h3>Abhijeet Patil</h3>
+
+                    <p>Shiv Sena A</p>
+
+                </div>
+
+                <div class="vote-progress">
+
+                    <div class="progress-info">
+                        <span>325 Votes</span>
+                        <span>37%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress"
+                             style="width:37%;">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Candidate 2 -->
+
+            <div class="result-card">
+
+                <div class="rank">
+                    2
+                </div>
+
+                <img src="images/candidate2.jpg"
+                     class="candidate-photo"
+                     alt="Candidate">
+
+                <div class="candidate-info">
+
+                    <h3>Prithviraj Chavan</h3>
+
+                    <p>BJP</p>
+
+                </div>
+
+                <div class="vote-progress">
+
+                    <div class="progress-info">
+                        <span>300 Votes</span>
+                        <span>34%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress"
+                             style="width:34%;">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Candidate 3 -->
+
+            <div class="result-card">
+
+                <div class="rank">
+                    3
+                </div>
+
+                <img src="images/candidate3.jpg"
+                     class="candidate-photo"
+                     alt="Candidate">
+
+                <div class="candidate-info">
+
+                    <h3>Prathmesh Jadhav</h3>
+
+                    <p>Rashtravadi Congress</p>
+
+                </div>
+
+                <div class="vote-progress">
+
+                    <div class="progress-info">
+                        <span>250 Votes</span>
+                        <span>29%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress"
+                             style="width:29%;">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- ================= COUNTER SCRIPT ================= -->
+
+<script>
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+    const target = Number(
+        counter.getAttribute("data-target")
+    );
+
+    let current = 0;
+
+    const duration = 1800;
+
+    const increment =
+        target / (duration / 16);
+
+    function updateCounter() {
+
+        current += increment;
+
+        if (current >= target) {
+            current = target;
+        }
+
+        if (counter.textContent.includes("%")) {
+
+            counter.textContent =
+                Math.floor(current) + "%";
+
+        } else {
+
+            counter.textContent =
+                Math.floor(current).toLocaleString();
+
+        }
+
+        if (current < target) {
+
+            requestAnimationFrame(
+                updateCounter
+            );
+
+        }
+
+    }
+
+    updateCounter();
+
+});
+
+</script>
+
+</body>
+</html>
