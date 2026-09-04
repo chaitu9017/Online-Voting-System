@@ -264,7 +264,7 @@ body {
 
     overflow: hidden;
 
-    color: white;
+    color: black;
 
     background: #8b1518;
 
@@ -277,7 +277,7 @@ body {
 
     padding: 10px;
 
-    background: #741012;
+    background: yellow;
 
     font-weight: bold;
 }
@@ -289,7 +289,7 @@ body {
 
     padding: 12px 0;
 
-    background: #963638;
+    background: orange;
 }
 
 .announcement-text {
